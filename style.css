@@ -15,6 +15,9 @@
     right: 0;
     padding: 0 20px;
     user-select: none;
+}
+
+.cross-menu:hover {
     cursor: pointer;
 }
 
@@ -68,25 +71,30 @@ li i {
     user-select: none;
 }
 
-.icon-list i {
-    font-size: 20px;
+.icon-list a {
     border-radius: 50%;
+    border: 3px solid red;
     padding: 10px;
+    outline: none;
     background-color: rgb(7, 170, 211);
-    cursor: pointer;
     transition: all 0.35s linear;
 }
 
-.icon-list i:not(:last-child) {
+.icon-list a i {
+    font-size: 20px;
+}
+
+.icon-list a:not(:last-child) {
     margin-right: 10px;
 }
 
-.icon-list i:hover {
+.icon-list a:hover {
     background-color: #f35f1b;
     color: black;
+    cursor: pointer;
 }
 
-.icon-list i:active {
+.icon-list a:active {
     background-color: #ccc8c8;
 }
 /* navigation bar style  complete*/
@@ -106,11 +114,14 @@ li i {
     margin-left: 50px;
     padding: 0 10px;
     color: white;
-    cursor: pointer;
     user-select: none;
     background-color: rgba(0, 0, 0,0.3);
     border-radius: 5px;
     animation: colorChanging 2s ease infinite;
+}
+
+.hamburger-menu:hover {
+    cursor: pointer;
 }
 
 @keyframes colorChanging {
@@ -154,3 +165,4 @@ li i {
         margin-left: 300px;
     }
 }
+
