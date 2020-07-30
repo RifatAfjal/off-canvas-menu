@@ -14,11 +14,14 @@
     font-size: 40px;
     right: 0;
     padding: 0 20px;
-    user-select: none;
-}
-
-.cross-menu:hover {
     cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .cross-menu:active {
@@ -75,13 +78,20 @@ li i {
     border-radius: 50%;
     border: 3px solid red;
     padding: 10px;
-    outline: none;
     background-color: rgb(7, 170, 211);
     transition: all 0.35s linear;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .icon-list a i {
     font-size: 20px;
+    color: white;
 }
 
 .icon-list a:not(:last-child) {
@@ -89,9 +99,8 @@ li i {
 }
 
 .icon-list a:hover {
-    background-color: #f35f1b;
+    background-color: red;
     color: black;
-    cursor: pointer;
 }
 
 .icon-list a:active {
@@ -114,14 +123,17 @@ li i {
     margin-left: 50px;
     padding: 0 10px;
     color: white;
-    user-select: none;
     background-color: rgba(0, 0, 0,0.3);
     border-radius: 5px;
-    animation: colorChanging 2s ease infinite;
-}
-
-.hamburger-menu:hover {
     cursor: pointer;
+    animation: colorChanging 2s ease infinite;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 @keyframes colorChanging {
