@@ -62,8 +62,11 @@ li .fa {
 
 /* hamburger menu start */
 .hamburger-container {
-    background-color: tomato;
+    background-color: black;
     padding: 5px 0;
+    height: 70px;
+    display: flex;
+    align-items: center;
 }
 
 .hamburger-menu {
@@ -74,8 +77,18 @@ li .fa {
     cursor: pointer;
     user-select: none;
     background-color: rgba(0, 0, 0,0.3);
-    border: 3px solid black;
     border-radius: 5px;
+    animation: colorChanging 2s ease infinite;
+}
+
+@keyframes colorChanging {
+    0%{
+        font-size: 30px;
+    }50%{
+        font-size: 45px;
+    }100%{
+        font-size: 30px;
+    }
 }
 
 .hamburger-menu:focus {
