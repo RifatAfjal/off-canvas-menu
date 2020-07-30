@@ -47,6 +47,7 @@ nav {
     text-decoration: none;
     padding: 10px 20px;
     transition: all 0.35s linear;
+    user-select: none;
 }
 
 .nav-link:hover {
@@ -54,8 +55,39 @@ nav {
     background-color: teal;
 }
 
-li .fa {
+li i {
     margin-right: 10px;
+}
+
+.icon-list {
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    text-align: center;
+    color: cornsilk;
+    user-select: none;
+}
+
+.icon-list i {
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgb(7, 170, 211);
+    cursor: pointer;
+    transition: all 0.35s linear;
+}
+
+.icon-list i:not(:last-child) {
+    margin-right: 10px;
+}
+
+.icon-list i:hover {
+    background-color: #f35f1b;
+    color: black;
+}
+
+.icon-list i:active {
+    background-color: #ccc8c8;
 }
 /* navigation bar style  complete*/
 
